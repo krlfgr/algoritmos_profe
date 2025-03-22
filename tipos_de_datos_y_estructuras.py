@@ -186,3 +186,21 @@ ordena en ascendente (por defecto).
 -> None → Indica que el método no devuelve nada (None), 
 sino que modifica la lista en su lugar (in-place).
 '''
+
+'''
+Si quieres guardar la lista ordenada en otra variable sin modificar la original,
+NO uses .sort() porque modifica la lista en su lugar y devuelve None.
+En su lugar, usa la función sorted().
+
+lista2 = [8, 9, 7, 5, 4, 10]
+
+lista_ordenada = sorted(lista2)  # Crea una nueva lista ordenada
+print("Lista original:", lista2)  # [8, 9, 7, 5, 4, 10]
+print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
+
+Otra opción es:
+lista2.sort()
+lista_ordenada = lista2.copy()  # Guarda una copia de la lista ordenada
+print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
+
+'''
