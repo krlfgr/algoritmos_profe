@@ -132,40 +132,40 @@ lista1.append(20)
 #print(lista1)
 
 lista1.remove(7) 
-print(lista1)
+#print(lista1)
 
 #Investigar reverse , sort
 
 #Acceder a los elementos de la lista
 lista2=[["jhon", "alejandro", "lewin",],["Isabel", "Juan", "Daniel"]]
-print(lista2[0][1])
+#print(lista2[0][1])
 
-print("------")
+#print("------")
 #INVESTIGACIÓN
 #reverse
 lista1 = [8, 9, 7, 5, 4, 10]
 lista1.reverse()  # Modifica lista1 en su lugar
-print("Salida del método reverse ")
-print(lista1)  # Ahora lista1 está invertida
+#print("Salida del método reverse ")
+#print(lista1)  # Ahora lista1 está invertida
 # 
 #Salida del método reverse
 #[10, 4, 5, 7, 9, 8]
 lista1 = [8, 9, 7, 5, 4, 10]
 listad= list(reversed(lista1))  # Convierte el iterador en una lista nueva
-print("esta es la lista d", listad)
+#print("esta es la lista d", listad)
 
 
 #sort
 lista2  = [8, 9, 7, 5, 4, 10]
 lista2.sort() #en orden ascendente es por defecto
-print("salida del método sort")
-print(lista2)
+#print("salida del método sort")
+#print(lista2)
 #salida del método sort
 #[4, 5, 7, 8, 9, 10]
 lista2.sort(reverse=True)
 listac=lista2.sort(reverse=True)
-print("salida del método sort con reverse True")
-print(lista2)
+#print("salida del método sort con reverse True")
+#print(lista2)
 
 #salida del método sort con reverse True -->orden descendente
 #[10, 9, 8, 7, 5, 4]
@@ -204,3 +204,53 @@ lista_ordenada = lista2.copy()  # Guarda una copia de la lista ordenada
 print("Lista ordenada:", lista_ordenada)  # [4, 5, 7, 8, 9, 10]
 
 '''
+
+print("----clase 26 de marzo ----")
+
+
+''''
+diccionarios
+<class 'dict'>
+
+{ 'clave':'valor', 'clave2':'valor2',,,,,,,  }
+
+
+{
+    'clave':'valor', 
+    'clave2':'valor2',
+    ,,,,,,  
+}
+
+'''
+estudiantes={'diana':25,'juan':20,'ana':29}
+
+print(type(estudiantes))
+
+print(estudiantes.keys())
+print(estudiantes.values())
+
+#diccionarios pueden involucrar otras estructuras
+instituto={
+    'robotica':["diana", "juan", "pedro"],
+    'programación':["andres", "luis", "miguel"]
+}
+
+print(instituto.values())
+
+colegio={
+    'quimica':{"luisa":15, "jose":14},
+    'fisica':{"lina":14, "Mario":17}
+}
+print(colegio.values())
+
+distancias={
+    ('Palmira', 'Cali'):22,
+    ('Palmira', 'Pradera'):15
+}
+
+#actualizar el diccionario agregando una nueva clave valor
+estudiantes['luisa']=45
+print(estudiantes)
+estudiantes['Juan']=18
+print(estudiantes)
+print(estudiantes.get('luisa'))
